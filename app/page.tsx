@@ -1,5 +1,7 @@
 'use client'
 
+import Logo from './components/Logo'
+
 export default function Home() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -14,8 +16,8 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-neutral-border shadow-sm">
         <div className="max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 xl:px-16">
           <div className="flex justify-between items-center h-16">
-            <div className="text-2xl font-heading font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
-              Mesa
+            <div className="flex items-center">
+              <Logo className="w-10 h-10" />
             </div>
             <div className="flex items-center gap-4">
               <button className="text-neutral-medium hover:text-neutral-dark font-medium text-sm transition-colors">
@@ -523,8 +525,9 @@ export default function Home() {
         <div className="max-w-[1600px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="text-xl font-heading font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent mb-4">
-                Mesa
+              <div className="flex items-center gap-2 mb-4">
+                <Logo className="w-8 h-8" />
+                <span className="text-xl font-heading font-bold text-neutral-dark">Mesa</span>
               </div>
               <p className="text-sm text-neutral-medium">
                 Free student help network. Get explanations, not just answers.
