@@ -19,9 +19,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Mesa - Get instant help from classmates. 100% free.',
   description: 'Free on-demand student help network. Get step-by-step guidance through chat or live audio sessions with a shared whiteboard. Mesa is 100% free to use.',
-  icons: {
-    icon: '/icon.svg',
-  },
 }
 
 export default function RootLayout({
